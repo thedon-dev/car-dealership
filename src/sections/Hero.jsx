@@ -65,7 +65,6 @@ const Hero = () => {
             }  bg-white shadow-lg rounded-full p-3 cursor-pointer`}
           >
             <FaArrowRight size={30} />
-            Hello Modafuker
           </buton>
         </div>
       </div>
@@ -79,6 +78,7 @@ const Hero = () => {
           <div></div>
           <div></div>
           <div></div>
+          {/* git commit --date="2025-02-4 10:25:45" -m "Missed a commit Day" */}
         </div>
         <div className="flex gap-2 justify-center mt-20 items-center">
           <div className="w-[8rem] h-fit border border-gray-400"></div>
