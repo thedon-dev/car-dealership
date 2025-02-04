@@ -65,6 +65,7 @@ const Hero = () => {
             }  bg-white shadow-lg rounded-full p-3 cursor-pointer`}
           >
             <FaArrowRight size={30} />
+            Hello Modafuker
           </buton>
         </div>
       </div>
