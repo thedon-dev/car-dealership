@@ -48,7 +48,7 @@ export const OurServices = () => {
       </div>
       <div className="max-w-[2500px] my-10 border ">
         <div>
-          <Image src={carSample} />
+          <Image src={carSample} alt="Electric Vehicle" className="" />
         </div>
         <div className="rounded-lg bg-white p-10 flex flex-col gap-5">
           <h2 className="text-xl font-bold text-blue-950">EVs For Everyone</h2>
