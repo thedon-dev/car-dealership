@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Explore from "@/sections/Explore";
 import Feedback from "@/sections/Feedback";
@@ -13,6 +14,7 @@ export default function Home() {
       <Explore />
       <OurServices />
       <Feedback />
+      <Footer />
     </div>
   );
 }

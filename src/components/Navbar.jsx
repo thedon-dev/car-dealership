@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
     <>
-      <div className="px-[8%] py-10">
+      <div className="px-[5%] lg:px-[8%] py-10">
         <nav className="2xl:container mx-auto relative border-red-600 flex justify-between">
           <ul className="flex items-center gap-5">
             <li className="p-2">Home</li>

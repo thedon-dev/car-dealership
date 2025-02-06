@@ -30,8 +30,7 @@ const AdminDashboard = () => {
     }
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const SubmitCar = async () => {
     const formData = new FormData();
     Object.keys(carData).forEach((key) => {
       formData.append(key, carData[key]);
@@ -67,7 +66,7 @@ const AdminDashboard = () => {
     <div className="relative py-16 grid place-content-center">
       <div className="max-w-2xl mx-auto p-6 bg-white shadow rounded ">
         <h2 className="text-2xl font-bold mb-4">Add a Car</h2>
-        <form onSubmit={handleSubmit} className="space-y-4 h-fit">
+        <form className="space-y-4 h-fit">
           <input
             type="text"
             name="name"
@@ -147,13 +146,13 @@ const AdminDashboard = () => {
           )}
 
           <div className=" mt-2">
-            <Link
+            <button
               href="/"
-              type="submit"
+              onClick={SubmitCar}
               className="w-full bg-blue-950 text-white p-2 rounded"
             >
               Add Car
-            </Link>
+            </button>
           </div>
         </form>
       </div>

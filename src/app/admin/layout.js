@@ -23,9 +23,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <button className="absolute left-32 top-10 bg-blue-950 text-white px-5 py-2 rounded">
+        <Link
+          href="/"
+          className="absolute left-32 top-10 bg-blue-950 text-white px-5 py-2 rounded"
+        >
           Back
-        </button>
+        </Link>
         <nav className="flex gap-5 w-full py-10 justify-center">
           <Link
             href="/admin/viewcars"

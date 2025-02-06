@@ -11,12 +11,12 @@ import { HeroData } from "@/data/HeroCar";
 const Hero = () => {
   const [imageNum, setImageNum] = useState(0);
   return (
-    <div className="px-[8%] pt-16 pb-10">
-      <div className="relative flex py-10 justify-between 2xl:container mx-auto">
-        <div className="ps-10 flex flex-col justify-center">
-          <h1 className="text-5xl font-bold">Find Your Dream</h1>
+    <div className="px-[5%] lg:px-[8%] pt-16 pb-10">
+      <div className="relative flex flex-col lg:flex-row py-10 justify-between 2xl:container mx-auto">
+        <div className="lg:ps-10 flex flex-col justify-center">
+          <h1 className="text-3xl lg:text-5xl font-bold">Find Your Dream</h1>
           <div className="flex items-center">
-            <h1 className="text-red-700 text-9xl font-bold">CAR</h1>
+            <h1 className="text-red-700 text-8xl lg:text-9xl font-bold">CAR</h1>
             <a
               href=""
               className="flex items-center text-sm gap-3 px-5 text-white ms-7 py-3 rounded-full bg-blue-950"
@@ -30,10 +30,10 @@ const Hero = () => {
           <Image
             src={HeroData[imageNum].image}
             alt="audi car"
-            className="object-cover h-[23rem]"
+            className="lg:object-cover mt-10 lg:h-[23rem]"
           />
         </div>
-        <div className="flex gap-0 h-fit flex-col">
+        <div className="flex gap-0 h-fit flex-row mx-auto lg:flex-col">
           {HeroData.map((_, index) => (
             <BsDot
               key={index}
@@ -45,27 +45,27 @@ const Hero = () => {
           ))}
         </div>
         <div className="absolute -top-20 flex justify-center w-full">
-          <h1 className="text-[15rem] uppercase opacity-15 font-bold">
+          <h1 className="text-[8rem] lg:text-[15rem] uppercase opacity-15 font-bold">
             {HeroData[imageNum].name}
           </h1>
         </div>
-        <div className="flex absolute p-5 gap-3 right-20 -bottom-10">
+        <div className="flex mx-auto lg:absolute p-5 gap-3 right-20 -bottom-10">
           <buton
             onClick={() => setImageNum(0)}
             className={`${
               imageNum == 1 ? "text-gray-800" : "text-gray-400"
             }  bg-white shadow-lg rounded-full p-3 cursor-pointer`}
           >
-            <FaArrowLeft size={30} />
+            <FaArrowLeft size={30} className="" />
           </buton>
-          <buton
+          <button
             onClick={() => setImageNum(1)}
             className={`${
               imageNum == 1 ? "text-gray-400" : "text-gray-800"
             }  bg-white shadow-lg rounded-full p-3 cursor-pointer`}
           >
             <FaArrowRight size={30} />
-          </buton>
+          </button>
         </div>
       </div>
       <div className="py-8 my-10">

@@ -13,14 +13,14 @@ const Explore = () => {
   const [exploreNum, setExploreNum] = useState(0);
   return (
     <div className="bg-gray-300 py-20">
-      <div className="px-[10%]">
+      <div className="px-[5%] lg:px-[8%]">
         <div className="2xl:container mx-auto">
           <div className="flex items-center justify-center gap-2">
             <div className="w-[10rem] h-fit border border-gray-500"></div>
             <h1 className="text-xl">EXPLORE</h1>
             <div className="w-[10rem] h-fit border border-gray-500"></div>
           </div>
-          <div className="flex gap-5 justify-center mt-10 w-1/2 mx-auto">
+          <div className="flex ps-10 gap-5 justify-center mt-10 w-full lg:w-1/2 mx-auto overflow-scroll">
             {buttons.map((btn, index) => (
               <button
                 onClick={() => setExploreNum(index)}
@@ -29,7 +29,7 @@ const Explore = () => {
                   index == exploreNum
                     ? "bg-red-700 text-white"
                     : "bg-none text-gray-600"
-                } text-sm px-4 py-2 rounded-full font-semibold`}
+                } text-sm px-4 text-nowrap py-2 rounded-full font-semibold`}
               >
                 {btn}
               </button>
