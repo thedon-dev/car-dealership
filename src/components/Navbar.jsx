@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <>
       <div className="px-[8%] py-10">
-        <nav className="relative border-red-600 flex justify-between">
+        <nav className="2xl:container mx-auto relative border-red-600 flex justify-between">
           <ul className="flex items-center gap-5">
             <li className="p-2">Home</li>
             <li className="p-2">Explore</li>
