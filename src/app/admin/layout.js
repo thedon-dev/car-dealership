@@ -25,11 +25,11 @@ export default function RootLayout({ children }) {
       >
         <Link
           href="/"
-          className="absolute left-32 top-10 bg-blue-950 text-white px-5 py-2 rounded"
+          className="absolute left-5 lg:left-32 top-5 lg:top-10 bg-blue-950 text-white px-5 py-2 rounded"
         >
           Back
         </Link>
-        <nav className="flex gap-5 w-full py-10 justify-center">
+        <nav className="flex gap-5 w-full py-10 justify-center mt-20 lg:mt-0">
           <Link
             href="/admin/viewcars"
             className="border px-4 py-2 rounded bg-blue-950 hover:bg-blue-900 text-white"

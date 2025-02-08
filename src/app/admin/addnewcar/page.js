@@ -64,7 +64,7 @@ const AdminDashboard = () => {
 
   return (
     <div className="relative py-16 grid place-content-center">
-      <div className="max-w-2xl mx-auto p-6 bg-white shadow rounded ">
+      <div className="w-[90%] lg:w-full max-w-2xl mx-auto p-6 bg-white shadow rounded ">
         <h2 className="text-2xl font-bold mb-4">Add a Car</h2>
         <form className="space-y-4 h-fit">
           <input
