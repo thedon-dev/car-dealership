@@ -11,11 +11,11 @@ import { HeroData } from "@/data/HeroCar";
 const Hero = () => {
   const [imageNum, setImageNum] = useState(0);
   return (
-    <div className="px-[5%] lg:px-[8%] pt-16 pb-10">
-      <div className="relative flex flex-col lg:flex-row py-10 justify-between 2xl:container mx-auto">
-        <div className="lg:ps-10 flex flex-col justify-center">
-          <h1 className="text-3xl lg:text-5xl font-bold">Find Your Dream</h1>
-          <div className="flex items-center">
+    <div className="px-[5%] lg:px-[8%] pt-10 lg:pt-16 pb-10">
+      <div className="relative flex flex-col  py-10 justify-between 2xl:container mx-auto">
+        <div className="text-center lg:ps-10 flex flex-col justify-center">
+          <h1 className="text-4xl lg:text-7xl font-bold">Find Your Dream</h1>
+          <div className="flex justify-center items-center">
             <h1 className="text-red-700 text-8xl lg:text-9xl font-bold">CAR</h1>
             <a
               href=""
@@ -30,10 +30,10 @@ const Hero = () => {
           <Image
             src={HeroData[imageNum].image}
             alt="audi car"
-            className="lg:object-cover mt-10 lg:h-[23rem]"
+            className="lg:object-cover mx-auto mt-10 lg:h-[23rem]"
           />
         </div>
-        <div className="flex gap-0 h-fit flex-row mx-auto lg:flex-col">
+        <div className="flex gap-0 h-fit flex-row mx-auto">
           {HeroData.map((_, index) => (
             <BsDot
               key={index}
@@ -44,7 +44,7 @@ const Hero = () => {
             />
           ))}
         </div>
-        <div className="absolute -top-20 flex justify-center w-full">
+        <div className="absolute top-28 flex justify-center w-full">
           <h1 className="text-[8rem] lg:text-[15rem] uppercase opacity-15 font-bold">
             {HeroData[imageNum].name}
           </h1>
@@ -82,17 +82,17 @@ const Hero = () => {
         </div>
         <div className="flex gap-2 justify-center mt-20 items-center">
           <div className="w-[8rem] h-fit border border-gray-400"></div>
-          <h2 className="text-xl">BRANDS</h2>
+          <h2 className="text-lg font-bold">BRANDS</h2>
           <div className="w-[8rem] h-fit border border-gray-400"></div>
         </div>
-        <div className="flex gap-14 mt-10 justify-center">
+        <div className="flex flex-wrap gap-14 mt-10 justify-center">
           {logos.map((logo, index) => (
             <Image
               key={index}
               src={logo}
-              width={70}
+              // width={70}
               alt="car brands"
-              className="opacity-45"
+              className="opacity-45 w-[5rem]"
             />
           ))}
         </div>

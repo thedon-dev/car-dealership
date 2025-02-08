@@ -69,7 +69,7 @@ const Footer = () => {
       <div className="2xl:container mx-auto lg:grid lg:grid-cols-2">
         <div className="lg:col-span-1">
           <h4 className="font-bold text-sm">Subscribe To Our Newsletter</h4>
-          <div className="p-2 flex bg-white rounded-full w-1/2 mt-5">
+          <div className="p-2 flex bg-white rounded-full lg:w-1/2 mt-5">
             <input
               type="email"
               name=""

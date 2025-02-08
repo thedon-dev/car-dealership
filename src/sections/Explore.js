@@ -4,23 +4,18 @@ import ExploreCar from "@/components/mainPageComp/ExploreCar";
 import React, { useState } from "react";
 
 const Explore = () => {
-  const buttons = [
-    "Cars & Minivan",
-    "Vans",
-    "Crossovers & SUVs",
-    "Electrified",
-  ];
+  const buttons = ["Cars", "SUVs"];
   const [exploreNum, setExploreNum] = useState(0);
   return (
     <div className="bg-gray-300 py-20">
       <div className="px-[5%] lg:px-[8%]">
         <div className="2xl:container mx-auto">
           <div className="flex items-center justify-center gap-2">
-            <div className="w-[10rem] h-fit border border-gray-500"></div>
-            <h1 className="text-xl">EXPLORE</h1>
-            <div className="w-[10rem] h-fit border border-gray-500"></div>
+            <div className="w-[7rem] lg:w-[10rem] h-fit border border-gray-500"></div>
+            <h1 className="text-lg font-bold">EXPLORE</h1>
+            <div className="w-[7rem] lg:w-[10rem] h-fit border border-gray-500"></div>
           </div>
-          <div className="flex ps-10 gap-5 justify-center mt-10 w-full lg:w-1/2 mx-auto overflow-scroll">
+          <div className="flex gap-5 px-10 justify-center mt-10">
             {buttons.map((btn, index) => (
               <button
                 onClick={() => setExploreNum(index)}
@@ -38,7 +33,7 @@ const Explore = () => {
         </div>
       </div>
       <div className="w-full mt-14">
-        <div className="hide-scroll px-[10%] flex overflow-x-scroll flex-shrink-0 pb-5">
+        <div className="hide-scroll flex px-10 overflow-x-scroll flex-shrink-0 pb-5">
           <ExploreCar />
           <ExploreCar />
           <ExploreCar />
