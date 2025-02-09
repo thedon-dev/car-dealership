@@ -31,9 +31,9 @@ export const OurServices = () => {
       <div className="py-20 px-[5%]">
         <div className="2xl:container mx-auto">
           <div className="flex items-center justify-center gap-2">
-            <div className="w-[7rem] lg:w-[10rem] h-fit border border-gray-500"></div>
+            <div className="w-[5rem] lg:w-[10rem] h-fit border border-gray-500"></div>
             <h1 className="text-lg font-bold">OUR SERVICES</h1>
-            <div className="w-[7rem] lg:w-[10rem] h-fit border border-gray-500"></div>
+            <div className="w-[5rem] lg:w-[10rem] h-fit border border-gray-500"></div>
           </div>
           <p className="text-gray-600 font-semibold text-center mt-5">
             We provide Many Of The Best Services For You And You Will Get The
@@ -50,8 +50,8 @@ export const OurServices = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[2000px] mx-auto my-10 flex flex-col items-center px-[5%] lg:px-0 lg:pe-10">
-        <div className="lg:w-3/5 z-10">
+      <div className="max-w-[2000px] mx-auto my-10 flex flex-col lg:flex-row items-center px-[5%] lg:px-0 lg:pe-10">
+        <div className="md:w-3/5 z-10">
           <Image
             src={carSample}
             alt="Electric Vehicle"
@@ -59,7 +59,7 @@ export const OurServices = () => {
             height={400}
           />
         </div>
-        <div className="rounded-lg bg-white px-10 lg:px-20 py-20 lg:py-40 flex flex-col gap-5 lg:w-2/5 -translate-y-10 lg:-translate-x-10">
+        <div className="rounded-lg bg-white px-10 lg:px-20 py-20 lg:py-40 flex flex-col gap-5 md:w-2/5 -translate-y-10 lg:-translate-x-10">
           <h2 className="text-3xl font-bold text-blue-950">EVs For Everyone</h2>
           <p className="">
             we Provide many of the best services for you and you will get the
