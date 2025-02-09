@@ -36,7 +36,7 @@ export const OurServices = () => {
             <div className="w-[7rem] lg:w-[10rem] h-fit border border-gray-500"></div>
           </div>
           <p className="text-gray-600 font-semibold text-center mt-5">
-            We Provide Many Of The Best Services For You And You Will Get The
+            We provide Many Of The Best Services For You And You Will Get The
             Best Benefits Here
           </p>
           <div className="flex flex-col lg:flex-row gap-5 mt-10 px-[10%]">
@@ -62,7 +62,7 @@ export const OurServices = () => {
         <div className="rounded-lg bg-white px-10 lg:px-20 py-20 lg:py-40 flex flex-col gap-5 lg:w-2/5 -translate-y-10 lg:-translate-x-10">
           <h2 className="text-3xl font-bold text-blue-950">EVs For Everyone</h2>
           <p className="">
-            we Provide many of the best servises for you and you will get the
+            we Provide many of the best services for you and you will get the
             best benefits here{" "}
           </p>
           <a
